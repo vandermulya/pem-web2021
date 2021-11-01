@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULIR PPDB JALUR ZONASI TAHUN 2021</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        body {
+            background: rgb(255, 249, 249);
+        }
+
+        .form-head {
+            width: 900px;
+            background: linear-gradient(135deg, #FF512F, #DD2476);
+            color: cornsilk;
+            margin: 0 250px;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            border-radius: 15px;
+            top: 10%;
+            position: absolute;
+        }
+
+        /* .form-body {
+            width: 900px;
+            background: rgba(50, 148, 132, 0.5);
+            margin: 0 250px;
+            color: #222;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            border-radius: 15px;
+            top: 20%;
+            position: absolute;
+        } */
+
+        .info-daftar {
+            background: rgba(255, 78, 122, 0.5);
+            width: 900px;
+            height: 200px;
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 20%;
+            position: absolute;
+            display: grid;
+        }
+
+        .info-daftar label {
+            display: flex;
+            text-align: left;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: right;
+            margin: 0 20px;
+            padding: 7px;
+        }
+
+        .info-daftar input {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: relative;
+            height: 35px;
+            width: 25%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            margin-right: 10px;
+            padding: 0 10px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .info-daftar input::placeholder {
+            color: #000000;
+        }
+
+        .info-daftar input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .info-daftar input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .info-daftar-1 {
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 20%;
+            left: 35%;
+            margin: 61px 220px;
+            position: absolute;
+            display: block;
+        }
+
+        .info-daftar-1 label {
+            display: flex;
+            text-align: left;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: right;
+            margin: 0 20px;
+            padding: 7px;
+        }
+
+        .info-daftar-1 input {
+            display: flex;
+            justify-content: right;
+            margin: 0 200px;
+            position: relative;
+            height: 35px;
+            width: 38%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            margin-right: 10px;
+            padding: 0 10px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .info-daftar-1 input::placeholder {
+            color: #000000;
+        }
+
+        .info-daftar-1 input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .info-daftar-1 input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-siswa {
+            background: rgba(255, 228, 78, 0.5);
+            width: 900px;
+            height: 550px;
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 52%;
+            position: absolute;
+            display: grid;
+        }
+
+        .data-siswa label {
+            display: flex;
+            text-align: left;
+            position: relative;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding: 3px;
+            top: 1%;
+        }
+
+        .data-siswa input {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: relative;
+            height: 35px;
+            width: 25%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            right: -5%;
+            padding: 0 10px;
+            top: -85%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-siswa input::placeholder {
+            color: #000000
+        }
+
+        .data-siswa input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-siswa input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-siswa-1 {
+            background: rgba(255, 228, 78, 0.5);
+            width: 900px;
+            height: 250px;
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 139%;
+            position: absolute;
+            display: grid;
+            padding-top: 35px;
+        }
+
+        .data-siswa-1 label {
+            display: flex;
+            text-align: left;
+            position: relative;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            top: 1%;
+        }
+
+        .data-siswa-1 textarea {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: relative;
+            height: 35px;
+            width: 28%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            right: 1%;
+            padding: 0 10px;
+            top: -10%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-siswa-1 textarea::placeholder {
+            color: #000000;
+        }
+
+        .data-siswa-1 input {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: relative;
+            height: 35px;
+            width: 23%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            right: 1%;
+            padding: 0 10px;
+            top: -10%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-siswa-1 input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-siswa-1 input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-siswa-1 input::placeholder {
+            color: #000000
+        }
+
+        .data-siswa-2 {
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 136%;
+            left: 36%;
+            margin: 61px 220px;
+            position: absolute;
+            display: block;
+        }
+
+        .data-siswa-2 label {
+            display: flex;
+            text-align: left;
+            position: relative;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding-bottom: 38px;
+        }
+
+        .data-siswa-2 input {
+            display: flex;
+            margin: 0 200px;
+            position: absolute;
+            height: 35px;
+            width: 110%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            right: -160%;
+            padding: 0 5px;
+            top: -5%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-siswa-2 input::placeholder {
+            color: #000000;
+        }
+
+        .data-siswa-2 input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-siswa-2 input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-ortu {
+            background: rgba(125, 165, 252, 0.5);
+            width: 900px;
+            height: 325px;
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 185%;
+            position: absolute;
+            display: grid;
+            padding-top: 5px;
+        }
+
+        .data-ortu label {
+            display: flex;
+            text-align: left;
+            position: relative;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding: 3px;
+            top: 1%;
+        }
+
+        .data-ortu input {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: relative;
+            height: 35px;
+            width: 25%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            right: -3%;
+            padding: 0 10px;
+            top: -8%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-ortu input::placeholder {
+            color: #000000;
+        }
+
+        .data-ortu input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-ortu input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-ortu select {
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            display: flex;
+            position: relative;
+            margin: 0 200px;
+            height: 35px;
+            width: 27.5%;
+            font-weight: 600;
+        }
+
+        .data-ortu-1 {
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 200%;
+            left: 35%;
+            margin: 61px 220px;
+            position: absolute;
+            display: block;
+        }
+
+        .data-ortu-1 label {
+            display: flex;
+            text-align: left;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding: 3px;
+            top: 1%;
+        }
+
+        .data-ortu-1 input {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: absolute;
+            height: 35px;
+            width: 50%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            right: -3%;
+            padding: 0 10px;
+            top: -8%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-ortu-1 input::placeholder {
+            color: #000000;
+        }
+
+        .data-ortu-1 input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-ortu-1 input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-ortu-1 select {
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            display: flex;
+            position: relative;
+            margin: 0 200px;
+            height: 35px;
+            width: 50%;
+            font-weight: 600;
+        }
+
+        .data-ortu-2 {
+            background: rgba(125, 165, 252, 0.5);
+            width: 900px;
+            height: 280px;
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 238%;
+            position: absolute;
+            display: grid;
+            padding-top: 5px;
+        }
+
+        .data-ortu-2 label {
+            display: flex;
+            text-align: left;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding: 3px;
+            left: 10%;
+            top: 5%;
+        }
+
+        .data-ortu-2 textarea {
+            display: flex;
+            align-items: right;
+            margin: 0 200px;
+            position: absolute;
+            height: 35px;
+            width: 50%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            left: 15%;
+            padding: 0 10px;
+            top: 5%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .data-ortu-2 textarea::placeholder {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .data-ortu-3 {
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 240%;
+            right: 25%;
+            margin: 61px 220px;
+            position: absolute;
+            display: block;
+        }
+
+        .data-ortu-3 label {
+            display: flex;
+            text-align: left;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding: 3px;
+            left: 10%;
+            top: 5%;
+        }
+
+        .data-ortu-3 input {
+            height: 35px;
+            width: 55%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            position: relative;
+            font-size: 16px;
+            padding-left: 3px;
+            font-weight: 600;
+        }
+
+        .data-ortu-3 input::placeholder {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .data-ortu-3 input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+
+        .data-ortu-3 input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-ortu-4 {
+            margin: 0 250px;
+            color: #222;
+            text-align: center;
+            border-radius: 15px;
+            top: 240%;
+            right: 25%;
+            margin: 61px 220px;
+            position: absolute;
+            display: block;
+        }
+
+        .data-ortu-4 label {
+            display: flex;
+            text-align: left;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: left;
+            margin: 0 20px;
+            padding: 3px;
+            left: 10%;
+            top: 5%;
+        }
+
+        .data-ortu-4 input {
+            height: 35px;
+            width: 55%;
+            background-color: rgba(204, 243, 238, 0.5);
+            color: #181716;
+            border-radius: 6px;
+            position: relative;
+            font-size: 16px;
+            padding-left: 3px;
+            font-weight: 600;
+        }
+
+        .data-ortu-4 input::placeholder {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .data-ortu-4 input:hover {
+            background: linear-gradient(90deg, #4568DC, #B06AB3);
+            cursor: pointer;
+        }
+
+        .data-ortu-4 input:focus {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: #fffcf2;
+            cursor: auto;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regist">
+        <div class="form-head">
+            <h2>FORMULIR PPDB JALUR ZONASI TAHUN 2021</h2>
+        </div>
+        <div class="form-body">
+            <div class="info-daftar">
+                <h3 style="margin: 10px 0;">INFO PENDAFTARAN</h3>
+                <form action="">
+                    <label for="" required>NISN</label>
+                    <input type="text" placeholder="NISN" required><br>
+                    <label for="">Asal Sekolah</label>
+                    <input type="text" placeholder="Asal Sekolah" required><br>
+                </form>
+            </div>
+            <div class="info-daftar-1">
+                <form action="">
+                    <label for="">Tahun Lulus</label>
+                    <input type="date"><br>
+                    <label for="">(<em>Foto Copy Ijazah</em>)</label>
+                    <input type="file" required>
+                </form>
+            </div>
+
+            <div class="data-siswa">
+                <h3 style="margin: 10px 0;">DATA CALON PESERTA</h3>
+                <label for="">Nama Lengkap</label>
+                <input type="text" placeholder="Nama Lengkap"><br>
+                <label for="">Nomor NIK</label>
+                <input type="text" placeholder="Nomor NIK"><br>
+                <label for="">Tempat/Tanggal lahir</label>
+                <input type="text" placeholder="Tempat, tanggal lahir" required>
+                <input type="date" style="right: -34%; top: -185%;" required><br>
+                <label for="" style="top: -100%;">Umur (tahun, bulan)</label>
+                <input type="text" maxlength="2" min="16" max="25" size="1" style="top: -175%;" placeholder="Tahun">
+                <input type="text" maxlength="2" size="1" style="right: -34%; top: -276%;" placeholder="bulan"><br>
+                <label for="" style="top: -275%;">(<em>FC Legalisir Akta Kelahiran</em>)</label>
+                <input type="file" required style="right: -15%; top: -355%;"><br>
+                <label for="" style="top: -320%;">Jenis Kelamin</label>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"
+                    style="display: inline; width: 18px; height: 18px; top: -725%;">
+                <label for="laki-laki" style="left: 30%; top: -478%;">Laki-laki</label><br>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"
+                    style="display: inline; width: 18px; height: 18px; top: -1155%; left: 25%;">
+                <label for="perempuan" style="left: 50%; top: -710%;">Perempuan</label>
+            </div>
+            <div class="data-siswa-1">
+                <form action="">
+                    <label for="">Alamat</label>
+                    <textarea name="address" rows="2.5" cols="35"
+                        placeholder="Tuliskan alamat Anda di sini"></textarea><br>
+                    <label for="">Desa/Kelurahan</label>
+                    <input type="text" placeholder="Desa / Kelurahan"><br>
+                    <label for="">Kecamatan</label>
+                    <input type="text" placeholder="Kecamatan"><br>
+                </form>
+            </div>
+            <div class="data-siswa-2">
+                <form action="">
+                    <label for="">Kabupaten/Kota</label>
+                    <input type="text" placeholder="Kabupaten / Kota" style="top: -3%; right: -220%; width: 115%;"><br>
+                    <label for="">Provinsi</label>
+                    <input type="text" placeholder="Provinsi" style="top: 34%; right: -195%;"><br>
+                    <label for="">E-Mail Aktif</label>
+                    <input type="email" placeholder="name@example.com" style="top: 71%; right: -195%;">
+                </form>
+            </div>
+
+            <div class="data-ortu">
+                <h3 style="margin: 10px 0;">DATA ORANG TUA</h3>
+                <form action="">
+                    <label for="">Nomor KK</label>
+                    <input type="text" placeholder="Nomor Kartu Keluarga" style="right: 5%;">
+                    <label for="" style="left: 45%; top: -16%;">(<em>Lampirkan KK</em>)</label>
+                    <input type="file" style="top: -25%; left: 43%;"><br>
+                    <label for="" style="top: -20%;">Nama Ayah</label>
+                    <input type="text" placeholder="Nama Ayah Kandung" style="top: -28%; left: -5%;"><br>
+                    <label for="" style="top: -25%;">Agama</label>
+                    <select id="agama" name="agama" style="top: -32%; left: -5%;">
+                        <option value="pilih" disabled="disabled" selected="selected">Silakan Pilih</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="konghucu">Konghucu</option>
+                    </select><br>
+                    <label for="" style="top: -30%;">Pekerjaan</label>
+                    <input type="text" placeholder="Pekerjaan Ayah" style="left: -5%; top: -38%;"><br>
+                </form>
+            </div>
+            <div class="data-ortu-1">
+                <form action="">
+                    <label for="" style="top: -25%; left: -8%;">Nama Ibu</label>
+                    <input type="text" placeholder="Nama Ibu Kandung" style="right: -35%; top: -29%;"><br>
+                    <label for="" style="top: 43%; left: -8%;">Agama</label>
+                    <select id="agama" name="agama" style="right: 10%;">
+                        <option value="pilih" disabled="disabled" selected="selected">Silakan Pilih</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="konghucu">Konghucu</option>
+                    </select><br>
+                    <label for="" style="top: 105%; left: -8%;">Pekerjaan</label>
+                    <input type="text" placeholder="Pekerjaan Ibu" style="right: -35%; top: 103%;"><br>
+                </form>
+            </div>
+            <div class="data-ortu-2">
+                <form action="">
+                    <label for="">Alamat Orang Tua</label>
+                    <textarea name="address" rows="2.5" cols="35"
+                        placeholder="Tuliskan alamat orang tua Anda"></textarea><br>
+                </form>
+            </div>
+            <div class="data-ortu-3">
+                <form action="">
+                    <label for="" style="top: 3%; left: -115%;">Desa/Kelurahan</label>
+                    <input type="text" placeholder="Desa / Kelurahan" style="left: -35%; width: 250px;"><br>
+                    <label for="" style="top: 68%; left: -115%;">Kecamatan</label>
+                    <input type="text" placeholder="Kecamatan" style="left: -35%; width: 250px; margin-top: 35px;"><br>
+                </form>
+            </div>
+            <div class="data-ortu-4">
+                <form action="">
+                    <label for="" style="top: 3%; left: 60%;">Kabupaten/Kota</label>
+                    <input type="text" placeholder="Kabupaten / Kota" style="left: 135%; width: 250px;"><br>
+                    <label for="" style="top: 70%; left: 60%;">Provinsi</label>
+                    <input type="text" placeholder="Provinsi" style="left: 135%; width: 250px; margin-top: 35px;"><br>
+                    <input type="submit" value="Submit"
+                        style="justify-content: right; top: 130%; position: absolute; right: -120%;">
+                    <!-- <button type="button" onclick="alert('Terima kasih telah mengisi formulir!')">Ketuk Aku!</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
