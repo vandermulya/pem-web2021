@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Selector di CSS</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            padding: 50px 50px;
+            background: #8DB596;
+        }
+
+        input[type=text] {
+            background: #F9D5A7;
+            color: #34626C;
+            padding: 10px;
+            border: 1px solid #F9D5A7;
+            border-radius: 10px;
+            margin: 0 25px;
+        }
+
+        input[type=text]::placeholder {
+            color: #34626C;
+        }
+
+        input[type=password] {
+            background: #D35D6E;
+            color: #FBF7F0;
+            padding: 10px;
+            border: 1px solid #D35D6E;
+            border-radius: 10px;
+            margin: 25px 30px;
+        }
+
+        input[type=password]::placeholder {
+            color: #FBF7F0;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="username">Username</label>
+    <input type="text" class="username" placeholder="Username"> <br>
+    <label for="password">Password</label>
+    <input type="password" class="password" placeholder="Password">
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.75em;
+    justify-content: center;
+    background: #E6DDC4;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+i {
+    font-family: 'Poppins', sans-serif;
+    color: #396EB0;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #FF5F7E;
+    text-align: center;
+    background: #F3ED9E;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    margin: 15px 500px;
+}
+
+span {
+    color: #6166B3;
+}
