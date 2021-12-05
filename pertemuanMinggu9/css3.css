@@ -1,0 +1,106 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background: #222;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    background: #ffb703;
+    box-shadow: 0 0 30px #ffb703;
+    border-radius: 10px;
+    margin: 30px 345px;
+    width: 675px;
+    height: 40px;
+}
+
+.middle {
+    margin: 10px auto;
+    width: 1350px;
+}
+
+/*
+nilai 5 adalah nilai untuk mengatur rata kiri kanan bayangan
+nilai 3 adalah nilai tinggi rendah nya bayangan
+nilai 2 adalah nilai untuk mengatur ketebalan bayangan
+dan yang terakhir adalah mengatur warna bayangan
+*/
+.tulisan1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 5px 3px 2px #e60303;
+    color: #fff;
+}
+
+/*
+nilai 0 adalah nilai untuk mengatur rata kiri kanan bayangan 
+nilai 0 adalah nilai tinggi rendah nya bayangan 
+nilai 15 adalah nilai untuk mengatur ketebalan bayangan 
+dan yang terakhir adalah mengatur warna bayangan
+*/
+.tulisan2 {
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 0px 0px 15px #7209b7;
+    color: #fff;
+}
+
+/*
+nilai 20 yang pertama adalah nilai untuk rata kiri kanan bayagan 
+nilai 20 yang kedua adalah nilai untuk tinggi rendah nya bayangan 
+nilai 40 yang ketiga adalah nilai ketebalan bayangan 
+nilai 10 yang keempat adalah nilai ukuran bayangan 
+dan yang terakhir adalah menentukan warna bayangan
+*/
+.kotak1 {
+    background: #d00000;
+    width: 300px;
+    height: 300px;
+    margin: 20px 70px;
+    float: left;
+    box-shadow: 20px 20px 40px 10px #d00000;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*
+nilai 0 yang pertama adalah nilai untuk rata kiri kanan bayagan 
+nilai 0 yang kedua adalah nilai untuk tinggi rendah nya bayangan 
+nilai 10 yang ketiga adalah nilai ketebalan bayangan 
+nilai 10 yang keempat adalah nilai ukuran bayangan 
+dan yang terakhir adalah menentukan warna bayangan
+*/
+.kotak2 {
+    background: #e85d04;
+    width: 300px;
+    margin: 20px 70px;
+    float: left;
+    height: 300px;
+    box-shadow: 0px 0px 10px 10px #e85d04;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*
+nilai 30 yang pertama adalah nilai untuk rata kiri kanan bayagan
+nilai -20 yang kedua adalah nilai untuk tinggi rendah nya bayangan
+nilai 40 yang ketiga adalah nilai ketebalan bayangan
+nilai 10 yang keempat adalah nilai ukuran bayangan
+dan yang terakhir adalah menentukan warna bayangan
+*/
+.kotak3 {
+    background: #2b9348;
+    width: 300px;
+    margin: 20px 70px;
+    float: left;
+    height: 300px;
+    box-shadow: 30px -20px 40px 10px #2b9348;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}

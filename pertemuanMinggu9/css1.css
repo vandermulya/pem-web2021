@@ -1,0 +1,90 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    /* background: #35A9DB; */
+    background: #222;
+    text-align: center;
+}
+
+h1 {
+    color: #fffffc;
+}
+
+.middle {
+    margin: 10px auto;
+    width: 1150px;
+}
+
+.kotak {
+    background: #fcfcfc;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.kotak1 {
+    border-radius: 10px 10px 10px 10px;
+    background: #f94144;
+    border: #f94144;
+    color: #ffffff;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak2 {
+    border-radius: 40px 20px 60px 90px;
+    background: #f3722c;
+    border: #f3722c;
+    color: #000;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak3 {
+    border-radius: 20px 10px 80px 10px;
+    background: #f8961e;
+    border: #f8961e;
+    color: #000;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak4 {
+    border-radius: 0px 50px 0px 50px;
+    background: #f9c74f;
+    border: #f9c74f;
+    color: #000;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak5 {
+    border-radius: 0px 0px 0px 0px;
+    background: #b56576;
+    border: #b56576;
+    color: #ffffff;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak6 {
+    border-radius: 100%;
+    background: #577590;
+    border: #577590;
+    color: #ffffff;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak7 {
+    border-radius: 40px 10px;
+    background: #43aa8b;
+    border: #43aa8b;
+    color: #ffffff;
+    box-shadow: 0 0 80px #000;
+}
+
+.kotak8 {
+    border-radius: 10px 10px 50% 50%;
+    background: #90be6d;
+    border: #90be6d;
+    color: #ffffff;
+    box-shadow: 0 0 80px #000;
+}

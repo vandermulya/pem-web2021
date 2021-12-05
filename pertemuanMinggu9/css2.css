@@ -1,0 +1,80 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background: #222;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    background: #ffb703;
+    box-shadow: 0 0 80px #ffb703;
+    border-radius: 10px;
+    margin: 30px 375px;
+    width: 550px;
+    height: 40px;
+}
+
+.middle {
+    margin: 10px auto;
+    width: 1150px;
+}
+
+.kotak {
+    background: blue;
+    width: 500px;
+    float: left;
+    height: 250px;
+    margin: 30px;
+}
+
+.gradient1 {
+    /* Standard syntax */
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(45deg, #FC466B, #3F5EFB);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(45deg, #FC466B, #3F5EFB);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(45deg, #FC466B, #3F5EFB);
+    border-radius: 40px 20px 60px 90px;
+    box-shadow: 0 0 80px #000;
+}
+
+.gradient2 {
+    /* Standard syntax */
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(left, #00c3ff, #ffff1c);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(right, #00c3ff, #ffff1c);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(right, #00c3ff, #ffff1c);
+    border-radius: 20px 10px 80px 10px;
+    box-shadow: 0 0 80px #000;
+}
+
+.gradient3 {
+    /* Standard syntax */
+    background: radial-gradient(#ff595e, #ffca3a, #8ac926);
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(#ff595e, #ffca3a, #8ac926);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-radial(#ff595e, #ffca3a, #8ac926);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-radial-gradient(#ff595e, #ffca3a, #8ac926);
+    border-radius: 5px 15px 25px 35px;
+    box-shadow: 0 0 80px #000;
+}
+
+.gradient4 {
+    /* Standard syntax */
+    background: radial-gradient(circle, #16A085, #F4D03F);
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(circle, #16A085, #F4D03F);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-radial(circle, #16A085, #F4D03F);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-radial-gradient(circle, #16A085, #F4D03F);
+    border-radius: 100%;
+    box-shadow: 0 0 80px #000;
+}

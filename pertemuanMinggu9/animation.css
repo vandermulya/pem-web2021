@@ -1,0 +1,98 @@
+body {
+    background: #222;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+h1 {
+    background: #02c39a;
+    box-shadow: 0 0 40px #02c39a;
+    border-radius: 10px;
+    margin: 30px 380px;
+    width: 645px;
+    padding: 5px 0;
+    height: 40px;
+}
+
+h2 {
+    background: #fb8b24;
+    box-shadow: 0 0 40px #fb8b24;
+    color: #000;
+    border-radius: 10px;
+    margin: 35px 483px;
+    width: 435px;
+    height: 30px;
+    padding: 5px 0;
+}
+
+.middle {
+    margin: 10px auto;
+    width: 1200px;
+}
+
+.kotak1 {
+    background: blue;
+    width: 200px;
+    height: 200px;
+    animation-name: animasi_kotak1;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+}
+
+@keyframes animasi_kotak1 {
+    from {
+        background: blue;
+    }
+
+    to {
+        background: red;
+    }
+}
+
+.kotak2 {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    background-color: red;
+    position: relative;
+    animation-name: animasi_kotak2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animasi_kotak2 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 400px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 400px;
+        top: 400px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 400px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

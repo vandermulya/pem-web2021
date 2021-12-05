@@ -1,0 +1,87 @@
+body {
+    background: #e5e5e5;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+h1 {
+    background: #ffb703;
+    box-shadow: 0 0 30px #ffb703;
+    border-radius: 10px;
+    margin: 30px 450px;
+    width: 475px;
+    height: 40px;
+}
+
+h2 {
+    background: #d90429;
+    box-shadow: 0 0 30px #d90429;
+    border-radius: 10px;
+    margin: 30px 585px;
+    width: 200px;
+    height: 30px;
+    padding: 5px 0;
+}
+
+.middle {
+    margin: 10px auto;
+    width: 1200px;
+}
+
+.kotak1 {
+    background: #000000;
+    padding: 20px;
+    float: left;
+    margin: 100px 100px;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0 80px #000000;
+}
+
+.kotak2 {
+    background: #14213d;
+    padding: 20px;
+    float: left;
+    margin: 180px 100px;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0 50px #14213d;
+    /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    /* Support IE 9 */
+    -ms-transform: matrix(1, 2, -1, 1, 5, 4);
+    /* Support Safari */
+    -webkit-transform: matrix(1, 2, -1, 1, 5, 4);
+    /* Standard syntax */
+    transform: matrix(1, 2, -1, 1, 5, 4);
+}
+
+.kotak3 {
+    background: #fca311;
+    padding: 20px;
+    float: left;
+    margin: 150px 100px;
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    box-shadow: 0 0 70px #fca311;
+    /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    /* Support IE 9 */
+    -ms-transform: matrix(1, 1, 1, -1, 2, 3);
+    /* Support Safari */
+    -webkit-transform: matrix(1, 1, 1, -1, 2, 3);
+    /* Standard syntax */
+    transform: matrix(1, 1, 1, -1, 2, 3);
+}
