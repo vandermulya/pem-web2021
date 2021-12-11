@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Selamat datang di JavaScript Pertamaku!</h2>
+    <h3>Operator Logika</h3>
+    <script>
+        var aku = 20;
+        var kamu = 19;
+        var dia = 22;
+        var hasil_1 = dia > aku;
+        var hasil_2 = dia < kamu;
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+        console.log("Operator logika sangatlah menyenangkan ^_^!");
+        console.log("Yuk, bersama-sama kita belajar JavaScript!");
+
+        // Operator && (AND)
+        var hasil = benar && hasil_1;
+        var akhir = hasil_1 && hasil_2;
+        document.write(`${benar} && ${hasil_1} = ${hasil}<br />`);
+        document.write(`${hasil_1} && ${hasil_2} = ${akhir}<br />`);
+
+        // Operator || (OR)
+        var hasil = benar || salah;
+        var akhir = salah || hasil_2;
+        document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+        document.write(`${salah} || ${hasil_2} = ${akhir}<br />`);
+
+        // Operator ! (NOT)
+        var hasil = !benar;
+        var akhir = !hasil_2;
+        document.write(`!${benar} = ${hasil}<br/>`);
+        document.write(`!${hasil_2} = ${akhir}<br />`);
+    </script>
+</body>
+
+</html>

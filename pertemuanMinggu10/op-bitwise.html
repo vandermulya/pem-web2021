@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Bitwise</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Selamat datang di JavaScript Pertamaku!</h2>
+    <h3>Operator Bitwise</h3>
+    <script>
+        var x = 60;
+        var y = 13;
+        console.log("Ayo giat berlatih!");
+        console.log("Pasti bisa! AYO AYO AYO SEMANGAT!!");
+
+        // Operator Bitwise AND (&)
+        var hasil = x & y;
+        document.write(`${x} & ${y} = ${hasil}<br/>`);
+
+        // Operator Bitwise OR (|)
+        var hasil = x | y;
+        document.write(`${x} | ${y} = ${hasil}<br/>`);
+
+        // Operator Bitwise XOR (^)
+        var hasil = x ^ y;
+        document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+
+        // Operator Negasi (~)
+        var hasil = ~x;
+        var hasil_1 = ~y;
+        document.write(`~${x} = ${hasil}<br/>`);
+        document.write(`~${y} = ${hasil_1}<br />`);
+
+        // Operator Bitwise Right Shift (>>)
+        var hasil = x >> y;
+        document.write(`${x} >> ${y} = ${hasil}<br/>`);
+
+        // Operator Bitwise Left Shift (<<)
+        var hasil = x << y;
+        document.write(`${x} << ${y}=${hasil}<br />`);
+
+        // Operator Bitwise Right Shift Unsigned (>>>)
+        var hasil = x >>> y;
+        document.write(`${x} >>> ${y} = ${hasil}<br />`);
+    </script>
+</body>
+
+</html>
