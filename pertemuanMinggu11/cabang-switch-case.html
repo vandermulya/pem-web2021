@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Switch/Case</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var jawab = prompt("Kamu beruntung! Silahakn pilih hadiahmu dengan memasukan angka 1 sampai 5");
+        var hadiah = "";
+
+        switch (jawab) {
+            case "1":
+                hadiah = "1 Unit Mobil Ferrari";
+                break;
+            case "2":
+                hadiah = "1 Unit Motor Benelli";
+                break;
+            case "3":
+                hadiah = "1 Unit iPhone 13 Pro Max";
+                break;
+            case "4":
+                hadiah = "2 Paket Umroh";
+                break;
+            case "5":
+                hadiah = "Emas 10gr 24K";
+                break;
+            default:
+                document.write("<h2>Whopsie! Anda salah pilih</h2>");
+        }
+        if (hadiah === "") {
+            document.write("<p>Sayang sekali, Anda gagal mendapat hadiah :(</p>");
+        } else {
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "!</h2>");
+            document.write("<p>Jangan lupa berbelanja kembali di toko kami!</p>");
+        }
+    </script>
+</body>
+
+</html>

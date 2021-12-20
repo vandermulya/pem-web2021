@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Ternary</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var jwb = prompt("Apakah kota Semarang ibu kota provinsi Jawa Tengah?");
+        var jawaban = (jwb.toUpperCase() == "BETUL") ? "Benar" : "Salah";
+        var soal = prompt("Makanan khas kota Semarang?");
+        var jawaban_1 = (soal.toUpperCase() == "LUMPIA" ? "Rp100.000,-" : "Senyuman aja yah :)");
+        document.write(`Jawaban Anda: <b>${jawaban}</b>`);
+        document.write("<br></br>");
+        document.write(`Anda berhak mendapatkan: <b>${jawaban_1}</b>`);
+    </script>
+</body>
+
+</html>
