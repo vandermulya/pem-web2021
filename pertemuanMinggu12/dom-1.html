@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memilih Elemen Berdasarkan Id</title>
+</head>
+
+<body>
+    <!-- Elemen div yang akan dipilih dari JavaScript -->
+    <div id="tutorial"></div>
+    <div id="paragraf"></div>
+    <script type="text/javascript">
+        // Mengakses Elemen
+        var tutorial = document.getElementById("tutorial");
+        var paragraf = document.getElementById("paragraf");
+        // Mengisi teks ke dalam Elemen
+        tutorial.innerText = "Tutorial Javascript";
+        paragraf.innerText = "Halo, perkenalkan namaku Vander Mulya Putra. Belajar JavaScript sangat seru!";
+        // Memberikan CSS ke Elemen (tutorial)
+        tutorial.style.backgroundColor = "gold";
+        tutorial.style.padding = "10px";
+        tutorial.style.fontSize = "20px";
+        tutorial.style.fontFamily = "Poppins, sans-serif";
+
+        // Memberikan CSS ke Elemen (paragraf)
+        paragraf.style.background = "linear-gradient(45deg, #6E3CBC, #7267CB)";
+        paragraf.style.padding = "10px";
+        paragraf.style.color = "#fff";
+        paragraf.style.margin = "15px 0";
+        paragraf.style.fontSize = "20px";
+        paragraf.style.fontFamily = "Poppins, sans-serif";
+    </script>
+</body>
+
+</html>

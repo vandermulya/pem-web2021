@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API JavaScript</title>
+    <style>
+        body {
+            background-color: #222;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium
+        suscipit quis magni,
+        maiores in?
+    </p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium
+        suscipit quis magni,
+        maiores in?
+    </p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium
+        suscipit quis magni,
+        maiores in?
+    </p>
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        console.log(paragraf);
+        paragraf[0].style.color = "red";
+        paragraf[0].style.background = "#fff";
+        paragraf[0].style.fontFamily = "Courier New, Courier, monospace";
+        paragraf[0].style.fontSize = "24px";
+        paragraf[0].style.fontWeight = "700";
+        paragraf[1].style.color = "yellow";
+        paragraf[2].style.color = "blue";
+    </script>
+</body>
+
+</html>

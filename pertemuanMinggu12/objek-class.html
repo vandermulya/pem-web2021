@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Objek JavaScript</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function Person(firstName, lastName) {
+            // Properti
+            this.firstName = firstName;
+            this.lastName = lastName;
+            // Method
+            this.fullName = function () {
+                return `${this.firstName} ${this.lastName}`
+            }
+            this.showName = function () {
+                document.write(this.fullName());
+            }
+        }
+        var person1 = new Person("Vander", "Mulya Putra");
+        var person2 = new Person("Universitas", "Dian Nuswantoro");
+        var person3 = new Person("Jalan", "Imam Bonjol No. 207");
+        person1.showName();
+        document.write("<br>");
+        person2.showName();
+        document.write("<br>");
+        person3.showName();
+    </script>
+</body>
+
+</html>

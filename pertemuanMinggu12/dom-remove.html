@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API JavaScript</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="judul2">Hapus Saya!</h2>
+    <p id="teks1">Saya mahasiswa Udinus</p>
+    <script>
+        // Memilih Elemen berdasarkan Id
+        var h2 = document.getElementById('judul2');
+        var p = document.getElementById("teks1");
+        // Menghapus Elemen yang sudah dipilih
+        h2.remove();
+        p.remove();
+        console.log("Elemen sudah dihapus");
+        console.log(h2);
+        console.log(p);
+    </script>
+</body>
+
+</html>

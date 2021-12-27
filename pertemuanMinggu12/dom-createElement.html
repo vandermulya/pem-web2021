@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API JavaScript</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // Membuat Elemen
+        var judul = document.createElement("h1");
+        var isi = document.createElement("p");
+        // Mengisi konten Elemen
+        judul.textContent = "Belajar Javascript";
+        isi.textContent = "Saya Vander Mulya Putra, calon orang sukses! :)";
+        // Menambahkan Elemen ke dalam tag body
+        document.body.append(judul);
+        document.body.append(isi);
+    </script>
+</body>
+
+</html>
