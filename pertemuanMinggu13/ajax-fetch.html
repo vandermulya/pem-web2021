@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar AJAX dengan Fetch</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            background-color: #222;
+        }
+
+        h1 {
+            color: #d90429;
+        }
+
+        h3 {
+            color: #ff8500;
+        }
+
+        p {
+            color: #edf2f4;
+        }
+
+        hr {
+            border-color: #fff1e6;
+            border: 3;
+        }
+
+        button {
+            box-shadow: inset 6px 6px 13px #fff,
+                6px 6px 13px rgba(0, 0, 0, 0.16);
+            background-color: #ecf0f3;
+            border: none;
+            border-radius: 10px;
+            width: 155px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .btn_load:hover {
+            background-image: linear-gradient(64.5deg, rgba(245, 116, 185, 1) 14.7%, rgba(89, 97, 223, 1) 88.7%);
+            transform: scale();
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tutorial Ajax dengan Fetch</h1>
+    <button onclick="loadContent()" class="btn_load">Load Content</button>
+    <div id="hasil"></div>
+    <script>
+        function loadContent() {
+            var url = "https://jsonplaceholder.typicode.com/posts/";
+            fetch(url).then(response => response.json())
+                .then(function (data) {
+                    var template = data.map(post => {
+                        return `<h3>${post.title}</h3>
+                        <p>${post.body}</p>
+                        <hr>`;
+                    });
+                    document.getElementById("hasil").innerHTML =
+                        template.join('<br>');
+                }).catch(function (e) {
+                    alert("Gagal mengambil data");
+                });
+        }
+    </script>
+</body>
+
+</html>

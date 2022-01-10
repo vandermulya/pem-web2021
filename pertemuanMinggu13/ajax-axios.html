@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial AJAX dengan AXIOS</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            background-color: #222;
+        }
+
+        h1 {
+            color: #d90429;
+        }
+
+        h3 {
+            color: #ff8500;
+        }
+
+        p {
+            color: #edf2f4;
+        }
+
+        hr {
+            border-color: #fff1e6;
+            border: 3;
+        }
+
+        button {
+            box-shadow: inset 6px 6px 13px #fff,
+                6px 6px 13px rgba(0, 0, 0, 0.16);
+            background-color: #ecf0f3;
+            border: none;
+            border-radius: 10px;
+            width: 155px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        #btn-load:hover {
+            background-image: linear-gradient(64.5deg, rgba(245, 116, 185, 1) 14.7%, rgba(89, 97, 223, 1) 88.7%);
+            transform: scale();
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tutorial AJAX dengan AXIOS</h1>
+    <button id="btn-load" onclick="loadContent()">Muat Konten</button>
+    <div id="result"></div>
+    <script>
+        function loadContent() {
+            document.getElementById("btn-load").innerHTML = "Memuat";
+            document.getElementById("btn-load").setAttribute("disabled", "true");
+            axios.get('https://jsonplaceholder.typicode.com/posts/').then(function (response) {
+                    var template = response.data.map(post => {
+                        return `<h3>${post.title}</h3><p>${post.body}</p><hr>`
+                    }).join("");
+                    document.getElementById("result").innerHTML = template;
+                })
+                .catch(function (error) {
+                    // Untuk menghandle error
+                    console.log(error);
+                })
+                .then(function () {
+                    document.getElementById("btn-load").innerHTML = "Selesai";
+                    document.getElementById("btn-load").removeAttribute("disabled");
+                });
+        }
+    </script>
+</body>
+
+</html>
