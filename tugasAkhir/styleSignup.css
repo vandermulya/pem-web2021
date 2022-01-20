@@ -1,0 +1,197 @@
+body {
+    background-color: #222;
+    font-family: 'Rubik', sans-serif;
+    background: url("img/login.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* START CSS AREA HEADER */
+header {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+}
+
+.header_nav {
+    overflow: hidden;
+    margin: 13px 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.beranda {
+    margin: 0 10px;
+}
+
+.about {
+    margin: 0 10px;
+}
+
+.produk {
+    margin: 0 10px;
+}
+
+.butam {
+    margin: 0 10px;
+}
+
+.header_nav a {
+    float: right;
+    display: flex;
+    color: #faf9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    color: #1e6091;
+    cursor: pointer;
+}
+
+/* AKHIR CSS AREA HEADER */
+
+/* START CSS AREA KONTEN */
+.form-header img {
+    margin: 3px 41px;
+}
+
+.form-header h3 {
+    text-align: center;
+    font-size: 17px;
+}
+
+.form_signup * {
+    font-family: 'Rubik', sans-serif;
+    color: #15616d;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: none;
+}
+
+.form_signup {
+    height: 910px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -145%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 30px 35px;
+}
+
+.form_signup label {
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.form_signup input {
+    display: block;
+    height: 45px;
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: #000;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form_signup input::placeholder {
+    color: #6c757d;
+}
+
+.form-body input:hover {
+    background: rgba(124, 124, 124, 0.144);
+}
+
+.form-body {
+    margin-top: 30px;
+}
+
+.form-body a {
+    text-decoration: none;
+    color: #00043a;
+}
+
+.form-body a:hover {
+    color: #407ba7;
+}
+
+.form-body h3 {
+    text-align: center;
+}
+
+.btn_submit {
+    position: absolute;
+    left: 70%;
+    bottom: 5%;
+    width: 120px !important;
+    height: auto;
+    float: right;
+    letter-spacing: 2px;
+    color: #15616d !important;
+}
+
+.btn_submit:hover {
+    color: #00043a !important;
+    cursor: pointer;
+    border: 2px solid #f1faee;
+}
+
+/* AKHIR CSS AREA KONTEN */
+
+/* START CSS AREA FOOTER */
+footer {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 1250px;
+    background: #003049;
+}
+
+.jam_digital {
+    overflow: hidden;
+}
+
+.kotak {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+.jam_digital p {
+    color: #f7ede2;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.jam_digital i {
+    font-size: 26px;
+    text-decoration: none;
+    color: #f7ede2;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    left: 85%;
+    top: 35%;
+}
+
+/* AKHIR CSS AREA FOOTER */

@@ -1,0 +1,221 @@
+body {
+    background-color: #222;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* START CSS AREA HEADER */
+header {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.header_img img {
+    position: absolute;
+    width: 204px;
+    height: 57px;
+    left: 30px;
+    top: 10px;
+}
+
+.header_nav {
+    overflow: hidden;
+    margin: 13px 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.beranda {
+    margin: 0 10px;
+}
+
+.about {
+    margin: 0 10px;
+}
+
+.produk {
+    margin: 0 10px;
+}
+
+.butam {
+    margin: 0 10px;
+}
+
+.header_nav a {
+    float: right;
+    display: flex;
+    color: #0A9396;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    color: #1e6091;
+    cursor: pointer;
+}
+
+/* AKHIR CSS AREA HEADER */
+
+/* START CSS AREA KONTEN */
+.container-top {
+    position: absolute;
+    width: 1349px;
+    height: 650px;
+    left: 0px;
+    top: 75.1px;
+    font-family: 'Rubik', sans-serif;
+    background: url("img/fish_market.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-top h1 {
+    color: #f1faee;
+    top: 25%;
+    position: absolute;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+.container-mid {
+    width: 1349px;
+    height: 950px;
+    left: 0px;
+    bottom: -147%;
+    position: absolute;
+    display: flex;
+    background: #006d77;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container-mid .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-sizing: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container-mid .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.container-mid .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container-mid .card .content img {
+    position: absolute;
+    bottom: -3px;
+    right: -67px;
+    pointer-events: none;
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.container-mid .card .content h3 {
+    font-size: 2.2em;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: -470%;
+    left: -240%;
+}
+
+.container-mid .card .content p {
+    font-size: 18px;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    bottom: -420%;
+    right: -255%;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #f1faee;
+    color: #0A9396;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .content a:hover {
+    letter-spacing: 1px;
+    background: #0A9396;
+    color: #f1faee;
+}
+
+/* AKHIR CSS AREA KONTEN */
+
+/* START CSS AREA FOOTER */
+footer {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 1622px;
+    background: #003049;
+}
+
+.jam_digital {
+    overflow: hidden;
+}
+
+.kotak {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+.jam_digital p {
+    color: #f7ede2;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.jam_digital i {
+    font-size: 26px;
+    text-decoration: none;
+    color: #f7ede2;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    left: 85%;
+    top: 35%;
+}
+
+/* AKHIR CSS AREA FOOTER */

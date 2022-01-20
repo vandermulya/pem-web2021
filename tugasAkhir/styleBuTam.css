@@ -1,0 +1,279 @@
+body {
+    background-color: #222;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* START CSS AREA HEADER */
+header {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.header_img img {
+    position: absolute;
+    width: 204px;
+    height: 57px;
+    left: 30px;
+    top: 10px;
+}
+
+.header_nav {
+    overflow: hidden;
+    margin: 13px 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.beranda {
+    margin: 0 10px;
+}
+
+.about {
+    margin: 0 10px;
+}
+
+.produk {
+    margin: 0 10px;
+}
+
+.login {
+    margin: 0 10px;
+}
+
+.signup {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-between;
+    display: flex;
+    margin: 3px 10px;
+    padding: 10px 22px !important;
+    color: #FFFFFF !important;
+    background: #0A9396;
+    border-radius: 10px;
+}
+
+.signup:hover {
+    color: #0A9396 !important;
+    box-shadow: 2px 2px 5px #0A9396 !important;
+}
+
+.header_nav a {
+    float: right;
+    display: flex;
+    color: #0A9396;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    color: #1e6091;
+    cursor: pointer;
+}
+
+/* AKHIR CSS AREA HEADER */
+
+/* START CSS AREA KONTEN */
+.container-top {
+    position: absolute;
+    width: 1349px;
+    height: 650px;
+    left: 0px;
+    top: 75.1px;
+    font-family: 'Rubik', sans-serif;
+    background: url("img/bukutamu.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-top h1 {
+    color: #f1faee;
+    text-shadow: 0 0 40px #005f73;
+    top: 25%;
+    position: absolute;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+.container-mid {
+    width: 1349px;
+    height: 625px;
+    left: 0px;
+    bottom: -105%;
+    position: absolute;
+    display: flex;
+    background: #1d3557;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container-low {
+    width: 1349px;
+    height: 300px;
+    background: #fca311;
+    left: 0px;
+    bottom: -150.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.form_body {
+    height: 515px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -42.9%;
+    left: 49%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 30px 35px;
+}
+
+.form_body * {
+    font-family: 'Rubik', sans-serif;
+    color: #F0C929;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: none;
+}
+
+.form_body label {
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.form_body input {
+    display: block;
+    height: 45px;
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: #FCECDD;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form_body input::placeholder {
+    color: #adb5bd;
+}
+
+.form_body input:hover {
+    background-image: radial-gradient(circle 976px at 51.2% 51%, rgba(11, 27, 103, 1) 0%, rgba(16, 66, 157, 1) 0%, rgba(11, 27, 103, 1) 17.3%, rgba(11, 27, 103, 1) 58.8%, rgba(11, 27, 103, 1) 71.4%, rgba(16, 66, 157, 1) 100.2%, rgba(187, 187, 187, 1) 100.2%);
+    cursor: pointer;
+}
+
+.form_body input:focus {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgba(0, 7, 128, 1) 99.8%);
+    color: #f1faee;
+    cursor: auto;
+    font-weight: 500;
+}
+
+.btn_submit {
+    position: absolute;
+    left: 74%;
+    bottom: 5%;
+    width: 100px !important;
+    height: auto;
+    float: right;
+    color: #F0C929 !important;
+}
+
+.btn_submit:hover {
+    letter-spacing: 4px;
+}
+
+.print_php {
+    width: 450px;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    color: #14213d;
+    left: 49%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 20px 35px;
+}
+
+.print_php h2 {
+    text-align: center;
+}
+
+.print_php hr {
+    border-color: #000;
+}
+
+/* AKHIR CSS AREA KONTEN */
+
+/* START CSS AREA FOOTER */
+footer {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 1646px;
+    background: #003049;
+}
+
+.jam_digital {
+    overflow: hidden;
+}
+
+.kotak {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+.jam_digital p {
+    color: #f7ede2;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.jam_digital i {
+    font-size: 26px;
+    text-decoration: none;
+    color: #f7ede2;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    left: 85%;
+    top: 35%;
+}
+
+/* AKHIR CSS AREA FOOTER */

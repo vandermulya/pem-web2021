@@ -1,0 +1,193 @@
+body {
+    background-color: #222;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* START CSS AREA HEADER */
+header {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.header_img img {
+    position: absolute;
+    width: 204px;
+    height: 57px;
+    left: 30px;
+    top: 10px;
+}
+
+.header_nav {
+    overflow: hidden;
+    margin: 13px 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.beranda {
+    margin: 0 10px;
+}
+
+.about {
+    margin: 0 10px;
+}
+
+.produk {
+    margin: 0 10px;
+}
+
+.butam {
+    margin: 0 10px;
+}
+
+.header_nav a {
+    float: right;
+    display: flex;
+    color: #0A9396;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    color: #1e6091;
+    cursor: pointer;
+}
+
+/* AKHIR CSS AREA HEADER */
+
+/* START CSS AREA KONTEN */
+.container-top {
+    position: absolute;
+    width: 1349px;
+    height: 650px;
+    left: 0px;
+    top: 75.1px;
+    font-family: 'Rubik', sans-serif;
+    background: url("img/kapal.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-top h1 {
+    color: #f1faee;
+    top: 25%;
+    position: absolute;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+.container-mid {
+    width: 1349px;
+    height: 450px;
+    left: 0px;
+    bottom: -77.7%;
+    position: absolute;
+    display: flex;
+    background: #f0efeb;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container-mid img {
+    margin: 0 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-mid p {
+    width: 1295px;
+    height: auto;
+    font-size: 20px;
+    color: #0A9396;
+    text-align: justify;
+    align-items: baseline;
+}
+
+.container-low {
+    width: 1349px;
+    height: 410px;
+    background: #83c5be;
+    left: 0px;
+    bottom: -139%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container-low img {
+    margin-left: 1px;
+    margin-right: 25px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 60px 25px 60px;
+}
+
+.container-low p {
+    width: 1270px;
+    height: auto;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #1d3557;
+    text-align: justify;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+}
+
+/* AKHIR CSS AREA KONTEN */
+
+/* START CSS AREA FOOTER */
+footer {
+    position: absolute;
+    width: 1349px;
+    height: 75px;
+    left: 0px;
+    top: 1570px;
+    background: #003049;
+}
+
+.jam_digital {
+    overflow: hidden;
+}
+
+.kotak {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+.jam_digital p {
+    color: #f7ede2;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.jam_digital i {
+    font-size: 26px;
+    text-decoration: none;
+    color: #f7ede2;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    left: 85%;
+    top: 35%;
+}
+
+/* AKHIR CSS AREA FOOTER */
